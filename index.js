@@ -21,7 +21,7 @@ MatcherCollection.prototype.match = function(value) {
 };
 
 MatcherCollection.prototype.mayContain = function(value) {
-  var parts = value.split('/').filter(Boolean);
+  var parts = value.split(/\/|\\/g).filter(Boolean);
 
   for (var i = 0; i < this.matchers.length; i++) {
     var matcher = this.matchers[i];
