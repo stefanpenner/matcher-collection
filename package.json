@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
-    "minimatch": "^2.0.10"
+    "minimatch": "^3.0.2"
   },
   "devDependencies": {
     "tap": "^1.4.1"
