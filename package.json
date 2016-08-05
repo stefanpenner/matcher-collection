@@ -1,6 +1,6 @@
 {
   "name": "matcher-collection",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "dependencies": {
     "minimatch": "^3.0.2"
