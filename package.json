@@ -8,9 +8,9 @@
   "devDependencies": {
     "tap": "^1.4.1"
   },
-  "files": {
+  "files": [
     "index.js"
-  },
+  ],
   "scripts": {
     "test": "tap --timeout 2 test.js",
     "test:debug": "tap --debug-brk --timeout 9999 test.js"
