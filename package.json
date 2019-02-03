@@ -6,14 +6,19 @@
     "minimatch": "^3.0.2"
   },
   "devDependencies": {
-    "tap": "^1.4.1"
+    "@types/minimatch": "^3.0.3",
+    "@types/node": "^10.12.21",
+    "tap": "^1.4.1",
+    "typescript": "~3.3.1"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
-    "test": "tap --timeout 2 test.js",
-    "test:debug": "tap --debug-brk --timeout 9999 test.js"
+    "build": "tsc -b .",
+    "test": "tsc -b . && tap --timeout 2 test.js",
+    "test:debug": "tsc -b . && tap --debug-brk --timeout 9999 test.js"
   },
   "author": "Stefan Penner",
   "license": "ISC",

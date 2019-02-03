@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "module": "commonjs"
+  }
+}
