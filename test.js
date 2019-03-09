@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var MatcherCollection = require("./");
 var tap = require('tap');
 var test = tap.test;

@@ -3,22 +3,22 @@
   "version": "1.1.2",
   "main": "index.js",
   "dependencies": {
-    "minimatch": "^3.0.2"
+    "minimatch": "^3.0.2",
+    "@types/minimatch": "^3.0.3"
   },
   "devDependencies": {
-    "@types/minimatch": "^3.0.3",
-    "@types/node": "^10.12.21",
-    "tap": "^1.4.1",
-    "typescript": "~3.3.1"
+    "@types/node": "^11.11.0",
+    "tap": "^12.6.0",
+    "typescript": "~3.3.3333"
   },
   "files": [
     "index.js",
     "index.d.ts"
   ],
   "scripts": {
-    "build": "tsc -b .",
-    "test": "tsc -b . && tap --timeout 2 test.js",
-    "test:debug": "tsc -b . && tap --debug-brk --timeout 9999 test.js"
+    "prepare": "tsc -b .",
+    "test": "tap --timeout 2 test.js",
+    "test:debug": "tap --debug-brk --timeout 9999 test.js"
   },
   "author": "Stefan Penner",
   "license": "ISC",
