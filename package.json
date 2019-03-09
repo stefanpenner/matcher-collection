@@ -11,6 +11,9 @@
     "tap": "^12.6.0",
     "typescript": "~3.3.3333"
   },
+  "engines": {
+    "node": "6.* || 8.* || >= 10.*"
+  },
   "files": [
     "index.js",
     "index.d.ts"
