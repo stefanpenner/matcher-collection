@@ -13,12 +13,12 @@ test('Shape', function(t: any) {
   t.done();
 });
 
-tap.Test.prototype.addAssert('mayContain', 2, function(this:any, path: any, matcher: any) {
+tap.Test.prototype.addAssert('mayContain', 2, function(this:any, path: string, matcher: string[]) {
   this.assert(new MatcherCollection(matcher).mayContain(path),
               'expected: `' + path + '` to match: `' + matcher + '`');
 });
 
-tap.Test.prototype.addAssert('mayNotContain', 2, function(this:any, path:any , matcher: any) {
+tap.Test.prototype.addAssert('mayNotContain', 2, function(this:any, path: string, matcher: string[]) {
   this.assert(!new MatcherCollection(matcher).mayContain(path),
               'expected to NOT: `' + path + '` to match: `' + matcher + '`');
 });
