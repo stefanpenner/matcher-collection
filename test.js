@@ -69,3 +69,4 @@ test('MatcherCollection#mayContain Windows', function (t) {
     t.mayContain('foo\\bar', [new Minimatch('foo/bar')]);
     t.end();
 });
+//# sourceMappingURL=test.js.map
